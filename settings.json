@@ -1,7 +1,9 @@
 {
     "tittle": "Trainer Shadow Of War",
     "build": 0.3,
-    "module": "ShadowOfWar.exe",
-    "endereco": "026737A8",
-    "offsets": ["0x80","0x90","0x8","0x30","0x28","0x48","0x42C"]
-}
+    "life":{
+        "module": "ShadowOfWar.exe",
+        "endereco": "026737A8",
+        "offsets": ["0x80","0x90","0x8","0x30","0x28","0x48","0x42C"]
+    }
+    }
