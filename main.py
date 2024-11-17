@@ -2,6 +2,7 @@ from pymem.process import *
 from pymem.exception import *
 from pymem import *
 from time import sleep
+from banner import *
 import os
 import json
 
@@ -31,8 +32,9 @@ def targetLife():
     return pm.write_float(getPointer(module + endereco, offsets),500.0)
 
 if __name__ == "__main__":
+    banner = layout()
+    print(banner)
+    sleep(2)
+    print("[*] Injetado!")
     while True:
         targetLife()
-        print("Injetado")
-        os.system("cls")
-        sleep(0.05)
