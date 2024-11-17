@@ -3,6 +3,9 @@ Channel - https://www.youtube.com/@sawtheme8132
 Github - https://github.com/SwthSawTheme
 
 
+OBS: Caso o executavel "Shadow.exe" desapareça da pasta, basta desativar o anti-virus
+ou o Windows defender!
+
 -------------T U T O R I A L----------------------
 
 1º Abra o jogo
