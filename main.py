@@ -9,9 +9,9 @@ import json
 
 with __builtins__.open("settings.json","r") as arquivo:
     data = json.load(arquivo)
-    name = data["life"]["module"]
-    endereco = int(data["life"]["endereco"],16)
-    offsets = [int(f"0x{offset}",16) for offset in data["life"]["offsets"]]
+    name = data["resolution"]["module"]
+    endereco = int(data["resolution"]["endereco"],16)
+    offsets = [int(f"0x{offset}",16) for offset in data["resolution"]["offsets"]]
 
 pm = Pymem("ShadowOfWar.exe")
 module = module_from_name(pm.process_handle,name).lpBaseOfDll
@@ -29,7 +29,7 @@ def getPointer(base, offsets):
 
 
 def targetLife():
-    return pm.write_float(getPointer(module + endereco, offsets),500.0)
+    return pm.write_float(getPointer(module + endereco, offsets),300.0)
 
 if __name__ == "__main__":
     banner = layout()

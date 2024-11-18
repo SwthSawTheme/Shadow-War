@@ -26,6 +26,7 @@ Divirta-se! 😊
 
 ## Tela In-Game
 !["Tela"](./imgs/tela.png)
+!["Tela"](./imgs/tela2.png)
 
 ## Interface do Trainer
 !["Interface"](./imgs/cheat-interface.png)
