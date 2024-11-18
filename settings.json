@@ -5,5 +5,10 @@
         "module": "ShadowOfWar.exe",
         "endereco": "02671CC8",
         "offsets": ["28","08","28","08","48","10","8","20","10","50"]
+    },
+    "life":{
+        "module": "ShadowOfWar.exe",
+        "endereco": "02797808",
+        "offsets": ["18","48","98","38","A0","30","60","0","18","42C"]
     }
 }
