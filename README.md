@@ -24,9 +24,17 @@
 
 Divirta-se! 😊
 
+---
+
+## 📜 Atualizações
+
+- Resolução infinita - build.0.31
+- Vida infinita Adicionado! - build.0.32
+
 ## Tela In-Game
-!["Tela"](./imgs/tela.png)
-!["Tela"](./imgs/tela2.png)
+!["Tela1"](./imgs/tela.png)
+!["Tela2"](./imgs/tela2.png)
+!["Tela3"](./imgs/tela3.png)
 
 ## Interface do Trainer
 !["Interface"](./imgs/cheat-interface.png)
