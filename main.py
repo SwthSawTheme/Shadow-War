@@ -24,11 +24,15 @@ def getPointer(base, offsets):
     addr += offsets[-1]
     return addr  # Retorna o endereço final calc
 
-
 def targetResolution():
     enderecoR = int(data["resolution"]["endereco"],16)
     offsetsR = [int(f"0x{offset}",16) for offset in data["resolution"]["offsets"]]
-    return pm.write_float(getPointer(module + enderecoR, offsetsR),300.0)
+    return pm.write_float(getPointer(module + enderecoR, offsetsR),500.0)
+
+def targetLife():
+    enderecoL = int(data["life"]["endereco"],16)
+    offsetsL = [int(f"0x{offset}",16) for offset in data["life"]["offsets"]]
+    return pm.write_float(getPointer(module + enderecoL, offsetsL), 500.0)
 
 def main():
     banner = layout()
@@ -37,6 +41,7 @@ def main():
     print("[*] Injetado!")
     while True:
         targetResolution()
+        targetLife()
 
 
 if __name__ == "__main__":

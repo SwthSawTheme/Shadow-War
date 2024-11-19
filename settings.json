@@ -1,6 +1,6 @@
 {
     "tittle": "Trainer Shadow Of War",
-    "build": 0.31,
+    "build": 0.32,
     "resolution":{
         "module": "ShadowOfWar.exe",
         "endereco": "02671CC8",
