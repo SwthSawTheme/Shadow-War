@@ -6,12 +6,9 @@ from banner import *
 import os
 import json
 
-
 with __builtins__.open("settings.json","r") as arquivo:
     data = json.load(arquivo)
     name = data["resolution"]["module"]
-    enderecoR = int(data["resolution"]["endereco"],16)
-    offsetsR = [int(f"0x{offset}",16) for offset in data["resolution"]["offsets"]]
 
 pm = Pymem("ShadowOfWar.exe")
 module = module_from_name(pm.process_handle,name).lpBaseOfDll
@@ -29,12 +26,18 @@ def getPointer(base, offsets):
 
 
 def targetResolution():
+    enderecoR = int(data["resolution"]["endereco"],16)
+    offsetsR = [int(f"0x{offset}",16) for offset in data["resolution"]["offsets"]]
     return pm.write_float(getPointer(module + enderecoR, offsetsR),300.0)
 
-if __name__ == "__main__":
+def main():
     banner = layout()
     print(banner)
     sleep(2)
     print("[*] Injetado!")
     while True:
         targetResolution()
+
+
+if __name__ == "__main__":
+    main()
