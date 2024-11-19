@@ -1,0 +1,19 @@
+Desenvolvido por Swth Saw Theme
+Channel - https://www.youtube.com/@sawtheme8132
+Github - https://github.com/SwthSawTheme
+
+
+OBS: Caso o executavel "Shadow.exe" desapareça da pasta, basta desativar o anti-virus
+ou o Windows defender!
+
+-------------T U T O R I A L----------------------
+
+1º Abra o jogo
+
+2° Quando o personagem estiver aparecendo na tela
+e for possível andar com o mesmo, execute o arquivo
+"Shadow.exe"
+
+3º Aguarde aparecer "Injetado"
+
+Pronto, divirta-se!!
